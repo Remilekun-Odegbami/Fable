@@ -1,0 +1,26 @@
+.main {
+    text-align: center;
+    font-family: 'Basis Grotesque Pro';
+    font-style: normal;
+    font-weight: 500;
+    color: #080B13;
+    margin-top: 50px;
+}
+
+.main-header {
+    font-size: 46px;
+    line-height: 140%;
+    text-transform: uppercase;
+}
+
+.info {
+    font-size: 24px;
+}
+
+img {
+    background-color: #E9E9E9;
+}
+
+.card {
+    border: none;
+}

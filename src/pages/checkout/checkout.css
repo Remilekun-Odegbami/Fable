@@ -1,0 +1,31 @@
+.checkout {
+    font-family: 'Basis Grotesque Pro';
+    font-style: normal;
+    font-weight: 500;
+    color: #080B13;
+}
+
+.checkout .card-body {
+    background-color: #E9E9E9;
+}
+
+.card-info-one {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+}
+
+.checkout .greet {
+    font-size: 24px;
+    line-height: 135%;
+    margin: 20px 0;
+    margin-bottom: 40px;
+}
+
+.checkout .order {
+    font-size: 18px;
+    line-height: 120%;
+    margin: 20px 0;
+    margin-top: 30px;
+}

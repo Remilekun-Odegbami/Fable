@@ -1,0 +1,134 @@
+.cart {
+    font-family: 'Basis Grotesque Pro';
+    font-style: normal;
+    font-weight: 500;
+    color: #080B13;
+}
+
+.cart input {
+    border: 1px solid #080B13;
+}
+
+label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    margin-bottom: 10px;
+}
+
+.location label {
+    font-size: 20px;
+}
+
+.cart .details {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+}
+
+.cart .btns .btn {
+    border: 1px solid #000;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    margin-top: 15px;
+}
+
+.intro {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 120%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.agree {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.submit {
+    align-items: center;
+    padding: 12px 24px;
+    width: 100%;
+    height: 50px;
+    background: rgba(60, 55, 55, 0.8);
+    opacity: 0.6;
+    color: #fff;
+    font-size: 20px;
+}
+
+.cart-items {
+    margin-top: -50px;
+}
+
+.grand-total {
+    margin: 30px;
+}
+
+.grand-total .tot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grand-total .tot h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.grand-total .tot h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+}
+
+.grand-total .tot input {
+    width: 70%;
+    height: 60px;
+    margin-right: 15px;
+    padding: 0 20px;
+}
+
+.grand-total .btn {
+    background-color: #000;
+    color: #ffff;
+    padding: 12px 24px;
+    width: 100px;
+    font-size: 20px;
+}
+
+.grand-total .promo {
+    margin-top: 20px;
+}
+
+@media (max-width: 450px) {
+    label {
+        font-size: 14px;
+    }
+
+    .location label {
+        font-size: 16px;
+    }
+
+    .agree {
+        font-size: 12px;
+    }
+
+    .submit {
+        font-size: 16px;
+    }
+
+    .cart .btns .btn {
+        font-size: 16px;
+    }
+}

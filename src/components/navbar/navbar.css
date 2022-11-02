@@ -1,0 +1,38 @@
+nav .nav-item {
+    margin-right: 10px;
+    margin-top: 20px;
+    color: #444;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Basis Grotesque Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 120%;
+    color: #080B13;
+}
+
+.navbar .navbar-brand {
+    font-weight: 600;
+}
+
+nav .nav-item:hover,
+.navbar .navbar-brand:hover {
+    color: rgb(67, 66, 66);
+    text-decoration: underline;
+}
+
+nav .pages {
+    margin-left: 14%;
+    text-transform: uppercase;
+}
+
+nav .pages .nav-item {
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    nav .pages {
+        margin-left: 0;
+    }
+}

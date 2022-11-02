@@ -1,0 +1,42 @@
+.single-product .intro {
+    font-size: 13px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.single-product .name {
+    font-family: 'Basis Grotesque Pro';
+    font-style: normal;
+    color: #000000;
+}
+
+.single-product .name,
+.single-product .price {
+    font-family: 'Basis Grotesque Pro';
+    font-style: normal;
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+.single-product .heading {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+}
+
+.single-product .full-info {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+}
+
+.single-product .btn {
+    align-items: center;
+    padding: 12px 24px;
+    width: 232px;
+    height: 50px;
+    background: rgba(60, 55, 55, 0.8);
+    opacity: 0.5;
+    color: #fff;
+}
