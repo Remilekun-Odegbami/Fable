@@ -9,7 +9,7 @@ export default function Cart() {
             <div className="row">
                 <h6 className="intro">Shopping Bag  —  Order</h6>
                 <div className="col-md-5 col-sm-12">
-                    <form>
+                    <form className='mt-3'>
                         <div className="location">
                             <div className="mb-3 col-md-6">
                                 <label htmlFor="city">City</label>

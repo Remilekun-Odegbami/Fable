@@ -26,6 +26,7 @@ label {
     font-weight: 500;
     font-size: 20px;
     line-height: 130%;
+    margin-top: 40px;
 }
 
 .cart .btns .btn {
@@ -50,8 +51,7 @@ label {
     font-weight: 400;
     font-size: 16px;
     line-height: 130%;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin: 30px 0;
 }
 
 .submit {
@@ -66,11 +66,14 @@ label {
 }
 
 .cart-items {
-    margin-top: -50px;
+    margin-top: -20px;
 }
 
 .grand-total {
     margin: 30px;
+    margin-top: 10px;
+    width: 60%;
+    margin-left: 35%;
 }
 
 .grand-total .tot {
@@ -93,8 +96,7 @@ label {
 }
 
 .grand-total .tot input {
-    width: 70%;
-    height: 60px;
+    height: 50px;
     margin-right: 15px;
     padding: 0 20px;
 }
@@ -102,13 +104,77 @@ label {
 .grand-total .btn {
     background-color: #000;
     color: #ffff;
-    padding: 12px 24px;
+    padding: 8px 24px;
     width: 100px;
     font-size: 20px;
 }
 
 .grand-total .promo {
     margin-top: 20px;
+}
+
+.del {
+    margin-top: -10px;
+}
+
+.qty,
+.btn-qty {
+    margin-top: -5px;
+}
+
+.collection,
+.article {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    color: rgb(63, 62, 62);
+}
+
+@media (max-width: 770px) {
+
+    .grand-total {
+        margin-left: 38%;
+        font-size: smaller;
+    }
+
+    .grand-total .tot input {
+        height: 40px;
+        margin-right: 10px;
+        width: 80%;
+    }
+
+    .grand-total .btn {
+        padding: 8px;
+        font-size: 15px;
+    }
+
+    .grand-total .tot h2 {
+        font-size: 16px;
+    }
+
+    .grand-total .tot h3 {
+        font-size: 14px;
+    }
+
+    .cart-items {
+        font-size: smaller;
+    }
+
+    .del {
+        margin-top: -20px;
+        font-size: smaller;
+    }
+
+    .size,
+    .color,
+    .qty {
+        font-size: smaller;
+    }
+
+    .qty {
+        margin-top: -8px;
+    }
 }
 
 @media (max-width: 450px) {
@@ -130,5 +196,19 @@ label {
 
     .cart .btns .btn {
         font-size: 16px;
+    }
+
+    .grand-total {
+        margin-left: 20px;
+        width: 85%;
+        font-size: larger;
+    }
+
+    .data {
+        margin-top: 20px;
+    }
+
+    .cart-items {
+        margin-top: 20px;
     }
 }

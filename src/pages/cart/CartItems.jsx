@@ -1,26 +1,27 @@
-import React from 'react'
+import React from 'react';
+import './cart.css'
 
 export default function CartItems({ productName, productCollection, article, size, color, price, productImage }) {
     return (
         <div>
-            <section className='mt-5'>
+            <section className='cartItems mt-2'>
                 <div className='container'>
                     <div className='row'>
-                        <div className="col-md-6 col-sm-12">
-                            <img src={productImage} className="" alt={productName} />
+                        <div className="col-md-4 col-sm-12">
+                            <img src={productImage} className="img-fluid" alt={productName} />
                         </div>
-                        <div className="col-md-6 col-sm-12">
+                        <div className="col-md-8 col-sm-12 data">
                             <h5 className="name">{productName}</h5>
-                            <h5 className="collection">{productCollection}</h5>
-                            <h5 className="article">{article}</h5>
-                            <div className="row">
-                                <p className="size">{size}</p>
-                                <p className="color">{color}</p>
-                                {/* <p className="qty">Quantity: <button className='btn'>-</button>  1 <button className='btn'>+</button> </p> */}
+                            <p className="collection">Collection: {productCollection}</p>
+                            <p className="article">Article: {article}</p>
+                            <div className="d-flex justify-content-between">
+                                <p className="size">Size: {size}</p>
+                                <p className="color">Color: {color}</p>
+                                <p className="qty">Quantity: <button className='btn btn-qty'>-</button>  1 <button className='btn btn-qty'>+</button> </p>
                             </div>
                             <div className="d-flex justify-content-between">
                                 <p className="card-text">&#8364;{price}</p>
-                                <button className='btn'>Delete</button>
+                                <button className='btn del'>Delete</button>
                             </div>
                         </div>
                     </div>
