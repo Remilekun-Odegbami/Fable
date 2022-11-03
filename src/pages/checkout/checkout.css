@@ -1,8 +1,9 @@
 .checkout {
-    font-family: 'Basis Grotesque Pro';
+    font-family: 'Basis Grotesque Pro', sans-serif;
     font-style: normal;
     font-weight: 500;
     color: #080B13;
+    padding: 0 42px;
 }
 
 .checkout .card-body {

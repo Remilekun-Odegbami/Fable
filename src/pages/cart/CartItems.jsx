@@ -5,7 +5,7 @@ export default function CartItems({ productName, productCollection, article, siz
     return (
         <div>
             <section className='cartItems mt-2'>
-                <div className='container'>
+                <div className='container-fluid'>
                     <div className='row'>
                         <div className="col-md-4 col-sm-12">
                             <img src={productImage} className="img-fluid" alt={productName} />

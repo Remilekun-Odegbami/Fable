@@ -5,7 +5,7 @@ import Table from './Table';
 
 export default function Checkout() {
     return (
-        <div className='container checkout'>
+        <div className='container-fluid checkout'>
             <div className="row">
                 <h6 className="intro">Profile  —  Main</h6>
                 <h1 className="greet">Hello, Darya!</h1>

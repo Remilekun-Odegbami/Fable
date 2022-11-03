@@ -5,7 +5,7 @@ import CartItems from './CartItems';
 
 export default function Cart() {
     return (
-        <div className='container cart'>
+        <div className='container-fluid cart'>
             <div className="row">
                 <h6 className="intro">Shopping Bag  —  Order</h6>
                 <div className="col-md-5 col-sm-12">

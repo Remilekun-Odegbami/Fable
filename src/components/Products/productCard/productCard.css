@@ -1,3 +1,7 @@
+.product-card {
+    font-family: 'Basis Grotesque Pro', sans-serif;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -8,4 +12,23 @@ a {
     justify-content: center;
     display: flex;
     margin: auto;
+}
+
+.card-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: #080b13;
+    opacity: 0.4;
+}
+
+.card-text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 135%;
+    text-align: center;
+    color: #080B13;
 }

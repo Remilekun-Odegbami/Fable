@@ -8,7 +8,7 @@ import './home.css';
 export default function Home() {
     return (
         <div>
-            <div className="container">
+            <div className="container-fluid">
                 <div className="row">
                     <div className="main">
                         <h1 className="main-header">Fable of klassik</h1>

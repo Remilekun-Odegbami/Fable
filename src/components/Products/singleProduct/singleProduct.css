@@ -5,14 +5,18 @@
 }
 
 .single-product .name {
-    font-family: 'Basis Grotesque Pro';
+    font-family: 'Basis Grotesque Pro', sans-serif;
     font-style: normal;
     color: #000000;
 }
 
+.single-product .product-image img {
+    height: 80vh;
+}
+
 .single-product .name,
 .single-product .price {
-    font-family: 'Basis Grotesque Pro';
+    font-family: 'Basis Grotesque Pro', sans-serif;
     font-style: normal;
     font-size: 28px;
     margin: 20px 0;
@@ -39,4 +43,16 @@
     background: rgba(60, 55, 55, 0.8);
     opacity: 0.5;
     color: #fff;
+}
+
+@media (max-width: 780px) {
+    .single-product .product-image img {
+        height: 70vh;
+    }
+}
+
+@media (max-width: 450px) {
+    .single-product .product-image img {
+        height: auto;
+    }
 }

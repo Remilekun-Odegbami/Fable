@@ -1,6 +1,6 @@
 .main {
     text-align: center;
-    font-family: 'Basis Grotesque Pro';
+    font-family: 'Basis Grotesque Pro', sans-serif;
     font-style: normal;
     font-weight: 500;
     color: #080B13;
@@ -23,4 +23,14 @@ img {
 
 .card {
     border: none;
+}
+
+.card img {
+    width: 110%;
+}
+
+@media (max-width: 768px) {
+    .card img {
+        width: 100%;
+    }
 }

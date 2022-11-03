@@ -1,8 +1,9 @@
 .cart {
-    font-family: 'Basis Grotesque Pro';
+    font-family: 'Basis Grotesque Pro', sans-serif;
     font-style: normal;
     font-weight: 500;
     color: #080B13;
+    padding: 0 40px;
 }
 
 .cart input {
@@ -15,6 +16,11 @@ label {
     font-size: 16px;
     line-height: 130%;
     margin-bottom: 10px;
+}
+
+.form-control,
+.btn {
+    border-radius: 0% !important;
 }
 
 .location label {
