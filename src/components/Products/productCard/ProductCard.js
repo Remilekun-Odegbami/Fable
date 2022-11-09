@@ -1,7 +1,6 @@
-import React from 'react';
-import './productCard.css'
+import './productCard.css';
 
-export default function ({ productName, price, productImage }) {
+export default function ({ productImage, productName, price }) {
     return (
         <div>
             <section className='mt-3 product-card'>

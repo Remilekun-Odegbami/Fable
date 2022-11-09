@@ -10,6 +10,12 @@
     color: #000000;
 }
 
+.single-product .product-image {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
 .single-product .product-image img {
     height: 80vh;
 }

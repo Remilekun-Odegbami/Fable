@@ -1,11 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import ProductCard from '../../components/Products/productCard/ProductCard';
+import axios from 'axios';
 import { AllProducts } from '../../AllProducts';
 import './home.css';
 
 
 export default function Home() {
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+        (async function () {
+            try {
+                const res = await axios.get("http://localhost:5000/api/products/")
+                console.log(res.data.data);
+                setProducts(res.data.data)
+            } catch (error) {
+                console.log(error);
+            }
+        })()
+    }, [])
+
+
     return (
         <div>
             <div className="container-fluid">
@@ -16,12 +32,12 @@ export default function Home() {
                     </div>
                     <div className="products row">
                         {
-                            AllProducts ? AllProducts.map(product => (
-                                <NavLink to={`/products/${product.id}`} className='col-md-4' key={product.id}>
+                            products ? products.map(product => (
+                                <NavLink to={`/products/${product._id}`} className='col-md-4' key={product._id}>
                                     <ProductCard
                                         productName={product.name}
-                                        ProductId={product.id}
-                                        productImage={product.img}
+                                        ProductId={product._id}
+                                        productImage={product.image[0]}
                                         price={product.price}
                                     />
                                 </NavLink>

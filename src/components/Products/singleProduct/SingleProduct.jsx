@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { AllProducts } from '../../../AllProducts';
+import axios from 'axios';
 import './singleProduct.css'
 
 export default function SingleProduct() {
@@ -9,17 +9,30 @@ export default function SingleProduct() {
     const [product, setProducts] = useState([]);
 
     useEffect(() => {
-        setProducts(AllProducts[id - 1]);
+        (
+            async function () {
+                try {
+                    const res = await axios.get(`http://localhost:5000/api/products/${id}`)
+                    setProducts(res.data.data);
+                } catch (error) {
+                    console.log(error);
+                }
+            }
+        )()
     }, [])
 
     return (
-        <section className="single-product" key={id}>
+        <section className="single-product">
             <div className="container-fluid">
                 <div className="row">
                     <h6 className="intro">Fable of Klassik  —  Jacket</h6>
                     <div className="col-md-5">
                         <div className="product-image">
-                            <img src={product?.img} alt={product?.name} className="img-fluid" />
+                            {
+                                product?.image?.map((img, index) => (
+                                    <img src={img} alt={product?.name} className="img-fluid" key={index} />
+                                ))
+                            }
                         </div>
                     </div>
 
