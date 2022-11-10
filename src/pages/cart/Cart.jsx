@@ -1,39 +1,57 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './cart.css'
 import { Carts } from '../../Carts';
 import CartItems from './CartItems';
+import axios from 'axios';
 
 export default function Cart() {
+    const [city, setCity] = useState("");
+    const [address, setAddress] = useState("");
+    const [fullName, setFullName] = useState("");
+    const [phone, setPhone] = useState("");
+    const [email, setEmail] = useState("");
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const newOrder = {
+            city, address, fullName, phone, email
+        }
+        try {
+            await axios.post("http://localhost:5000/api/customer", newOrder)
+        } catch (error) {
+            console.log(error);
+        }
+    }
     return (
         <div className='container-fluid cart'>
             <div className="row">
                 <h6 className="intro">Shopping Bag  —  Order</h6>
                 <div className="col-md-5 col-sm-12">
-                    <form className='mt-3'>
+                    <form className='mt-3' onSubmit={handleSubmit}>
                         <div className="location">
                             <div className="mb-3 col-md-6">
                                 <label htmlFor="city">City</label>
-                                <input type="text" className='form-control' id='city' placeholder='Enter city' />
+                                <input type="text" className='form-control' id='city' placeholder='Enter city' onChange={e => setCity(e.target.value)} />
 
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="address">Address</label>
-                                <input type="text" className='form-control' id='address' placeholder='Enter address' />
+                                <input type="text" className='form-control' id='address' placeholder='Enter address' onChange={e => setAddress(e.target.value)} />
                             </div>
                         </div>
 
                         <h2 className='details'>Recipient's details</h2>
                         <div className="mb-3">
                             <label htmlFor="name">Name and surname</label>
-                            <input type="text" className='form-control' id='name' placeholder='Enter name and surname' />
+                            <input type="text" className='form-control' id='name' placeholder='Enter name and surname' onChange={e => setFullName(e.target.value)} />
                         </div>
                         <div className="mb-3">
                             <label htmlFor="phone">Phone</label>
-                            <input type="number" className='form-control' id='phone' placeholder='Enter phone number' />
+                            <input type="number" className='form-control' id='phone' placeholder='Enter phone number' onChange={e => setPhone(e.target.value)} />
                         </div>
                         <div className="mb-3">
                             <label htmlFor="email">Email</label>
-                            <input type="email" className='form-control' id='email' placeholder='Enter email' />
+                            <input type="email" className='form-control' id='email' placeholder='Enter email' onChange={e => setEmail(e.target.value)} />
                         </div>
 
                         <h2 className='details'>Payment method</h2>

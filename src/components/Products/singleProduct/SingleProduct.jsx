@@ -49,7 +49,7 @@ export default function SingleProduct() {
                         </div>
                         <div className="product-info mt-4 mb-4">
                             <h3 className="heading">Product Info</h3>
-                            <h3 className="full-info">Jacket made of a loose fit makes the product a universal element of the upper layer. Two patch pockets and one hidden pocket. Branded lining with FABLE pattern. Shoulder pads of medium rigidity for shaping.</h3>
+                            <h3 className="full-info">{product?.desc}</h3>
                         </div>
                     </div>
                 </div>
