@@ -17,7 +17,7 @@ export default function Cart() {
             city, address, fullName, phone, email
         }
         try {
-            await axios.post("http://localhost:5000/api/customer", newOrder)
+            await axios.post("https://charming-ray-flannel-nightgown.cyclic.app/api/customer", newOrder)
         } catch (error) {
             console.log(error);
         }

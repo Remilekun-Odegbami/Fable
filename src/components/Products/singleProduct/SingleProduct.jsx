@@ -12,7 +12,7 @@ export default function SingleProduct() {
         (
             async function () {
                 try {
-                    const res = await axios.get(`http://localhost:5000/api/products/${id}`)
+                    const res = await axios.get(`https://charming-ray-flannel-nightgown.cyclic.app/api/products/${id}`)
                     setProducts(res.data.data);
                 } catch (error) {
                     console.log(error);
